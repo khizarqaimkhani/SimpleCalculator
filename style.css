@@ -19,7 +19,7 @@ h2 {
 }
 
 #display {
-    width: 212px; /* Adjusted to match button row width */
+    width: 212px; 
     height: 40px;
     font-size: 20px;
     text-align: right;
@@ -66,7 +66,7 @@ button:active {
     transform: translateY(1px);
 }
 
-/* Operator buttons */
+
 button[onclick*="setOperator"] {
     background-color: #f5923e;
     color: white;
@@ -80,7 +80,7 @@ button[onclick*="setOperator"]:active {
     background-color: #d4721e;
 }
 
-/* Clear button */
+
 button[onclick="clearDisplay()"] {
     background-color: #ff4444;
     color: white;
@@ -94,7 +94,7 @@ button[onclick="clearDisplay()"]:active {
     background-color: #dd2222;
 }
 
-/* Equals button */
+
 button[onclick="calculate()"] {
     background-color: #4CAF50;
     color: white;
@@ -106,4 +106,5 @@ button[onclick="calculate()"]:hover {
 
 button[onclick="calculate()"]:active {
     background-color: #2e8f32;
+
 }
