@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+   background-image: url(bgpicture.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+   background-size: cover;
+}
+
+h2 {
+    color: #a39d9d;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#display {
+    width: 212px; /* Adjusted to match button row width */
+    height: 40px;
+    font-size: 20px;
+    text-align: right;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.calculator-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    transition: all 0.2s;
+    box-shadow: 0 2px #999;
+}
+
+button:hover {
+    background-color: #d0d0d0;
+}
+
+button:active {
+    background-color: #b0b0b0;
+    box-shadow: 0 1px #666;
+    transform: translateY(1px);
+}
+
+/* Operator buttons */
+button[onclick*="setOperator"] {
+    background-color: #f5923e;
+    color: white;
+}
+
+button[onclick*="setOperator"]:hover {
+    background-color: #e4822e;
+}
+
+button[onclick*="setOperator"]:active {
+    background-color: #d4721e;
+}
+
+/* Clear button */
+button[onclick="clearDisplay()"] {
+    background-color: #ff4444;
+    color: white;
+}
+
+button[onclick="clearDisplay()"]:hover {
+    background-color: #ee3333;
+}
+
+button[onclick="clearDisplay()"]:active {
+    background-color: #dd2222;
+}
+
+/* Equals button */
+button[onclick="calculate()"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button[onclick="calculate()"]:hover {
+    background-color: #3e9f42;
+}
+
+button[onclick="calculate()"]:active {
+    background-color: #2e8f32;
+}
